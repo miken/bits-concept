@@ -1,6 +1,6 @@
 require 'jekyll_asset_pipeline'
 require 'compass'
-require 'zurb-foundation'
+require 'bootstrap-sass'
 
 Compass.sass_engine_options[:load_paths].each do |path|
   Sass.load_paths << path

@@ -5,7 +5,7 @@ gem 'jekyll', '~> 1.3.0'
 gem 'jekyll-slim'
 gem 'jekyll-asset-pipeline'
 gem 'compass'
-gem 'zurb-foundation'
+gem 'bootstrap-sass'
 gem 'yui-compressor'
 gem 'coffee-script'
 
