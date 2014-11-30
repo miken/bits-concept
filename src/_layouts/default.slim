@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    title
+      | {{ page.title }}
+    meta name="viewport" content="width=device-width"
+    | {% css_asset_tag global %}
+      - /_assets/css/app.scss
+    | {% endcss_asset_tag %}
+
+  body
+    .header
+      .row
+        .large-12.columns.text-center
+          h1.title
+            a href="/"
+              | {{ site.name }}
+          a.button.small href="/" Home
+    .row
+      .large-12.columns
+      | {{ content }}
+    .footer
+      .row
+        .large-12.columns.text-center
+          .contact
+            p Mike Nguyen

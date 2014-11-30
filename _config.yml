@@ -1,0 +1,13 @@
+name: Boston IT Services
+markdown: redcarpet
+pygments: true
+
+source: ./src
+destination: ./build
+
+asset_pipeline:
+  bundle: true
+  compress: true
+  output_path: assets
+  display_path: nil
+  gzip: false
