@@ -1,44 +1,9 @@
 doctype html
 html
-  head
-    meta charset="utf-8"
-    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
-    title
-      | {{ page.title }}
-    meta name="viewport" content="width=device-width"
-
-    / Font Awesome CDN
-    link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
-    | {% css_asset_tag global %}
-      - /_assets/css/app.scss
-    | {% endcss_asset_tag %}
-    | {% javascript_asset_tag global %}
-      - /_assets/js/home.js
-    | {% endjavascript_asset_tag %}
+  | {% slim head.slim %}
 
   body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"
-    nav.navbar.navbar-custom.navbar-fixed-top role="navigation"
-      .container
-        .navbar-header
-          button.navbar-toggle type="button" data-toggle="collapse" data-target=".navbar-main-collapse"
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand href="#page-top"
-            img src="../img/bits_logo_sm.png"
-
-        .collapse.navbar-collapse.navbar-right.navbar-main.collapse
-          ul.nav.navbar-nav
-            / Hidden li included to remove active class from about link when scrolled up past about section
-            li.hidden
-              a href="#page-top"
-            li
-              a.page-scroll href="#about" About
-            li
-              a.page-scroll href="#download" Download
-            li
-              a.page-scroll href="#contact" Contact
+    | {% slim navbar.slim %}
 
     / Intro cover page
     header.intro
