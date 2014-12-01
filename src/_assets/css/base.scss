@@ -78,7 +78,8 @@ a {
   }
   .navbar-brand {
     font-weight: 700;
-    :focus {
+    padding: 0 15px;
+    &:focus {
       outline: 0;
     }
   }
