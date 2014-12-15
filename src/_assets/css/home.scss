@@ -106,11 +106,10 @@
 
 section.about {
   @include bg-image("../img/hands_up.jpg");
-  max-height: 700px;
   font-weight: 300;
   position: relative;
   .headline {
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: 50px;
     font-size: 4em;
     color: $color-blue;
@@ -130,18 +129,28 @@ section.work {
   max-height: 750px;
   font-weight: 300;
   .headline {
-    margin-top: 50px;
+    margin: 50px 0 20px;
     font-size: 3em;
+    color: $color-dark-roon;
+  }
+  .left-title {
+    margin-top: 50px;
+    font-size: 2.5em;
     color: $color-blue;
+  }
+  .service {
+    margin: 40px 0;
   }
   p {
     color: $color-dark-pot;
     font-size: 1.3em;
-    margin: 20px 0;
   }
   .title {
-    color: $color-roon;
-    font-size: 2em;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    color: $color-blue;
+    font-size: 1.5em;
+  }
+  .desc {
+    color: $color-dark-persim;
   }
 }

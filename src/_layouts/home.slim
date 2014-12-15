@@ -14,17 +14,6 @@ html
   body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"
     | {% slim navbar.slim %}
 
-    / Intro cover page
-    header.intro
-      .intro-body
-        .container
-          .row
-            .col-md-8.col-md-offset-2
-              h1.brand-heading BITS
-              p.intro-text Boston IT Services
-              a.btn.btn-circle.page-scroll href="#about"
-                i.fa.fa-angle-double-down.animated
-
     / About
     section.about
       .headline We provide peace of mind.
@@ -33,7 +22,29 @@ html
     / Our work
     section.work
       .container
+        .headline.text-center Services & Technologies
+        .row
+          .col-sm-6
+            .left-title Everything you need to succeed in your business
+          .col-sm-6
+            .row.service
+              .col-xs-3
+                img src="../img/temp_support.png"
+              .col-xs-9
+                .title 24/7 On-Demand IT Support
+                .desc We are just a phone call or email away.
+            .row.service
+              .col-xs-3
+                img src="../img/temp_database.png"
+              .col-xs-9
+                .title Data Protection
+                .desc Find your data in one secure place at any time. Never worry about data back-up again. 
+            .row.service
+              .col-xs-3
+                img src="../img/temp_cloud.png"
+              .col-xs-9
+                .title Cloud services
+                .desc Work seamlessly from the cloud. Uninterrupted access to your network and data.
+
         .headline.text-center Clients & Industries
         p Client logos here
-        .headline.text-center Our Technologies
-        p Selection of technology logos here

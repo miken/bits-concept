@@ -48,6 +48,10 @@ p {
   }
 }
 
+img {
+  width: 100%;
+}
+
 a {
   color: #219ab3;
   -webkit-transition: all .2s ease-in-out;
@@ -71,7 +75,7 @@ a {
   font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: #000;
   a {
-    color: #fff;
+    color: $color-blue;
   }
   .nav {
     li a {
@@ -96,7 +100,7 @@ a {
   .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: $color-blue;
     &:focus,
     &:active {
       outline: 0;
