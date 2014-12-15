@@ -1,9 +1,19 @@
+// Colors
+$color-skin: #FECDA2;
+$color-persim: #F3A78F;
+$color-roon: #CB95A3;
+$color-pot: #9792A7;
+$color-blue: #395781;
+
+// Variations
+$color-dark-pot: darken($color-pot, 20%);
+$color-dark-persim: darken($color-persim, 20%);
+$color-dark-roon: darken($color-roon, 20%);
+
 body {
   width: 100%;
   height: 100%;
   font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #fff;
-  background-color: #000;
 }
 
 html {
@@ -113,119 +123,5 @@ a {
 
   .navbar-custom.top-nav-collapse {
     border-bottom: 1px solid rgba(255,255,255,.3);
-  }
-}
-
-
-.intro {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
-  text-align: center;
-  color: #fff;
-  background: url(../img/boston_skyline.jpg) no-repeat bottom center scroll;
-  background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-    .brand-heading {
-      font-size: 40px;
-    }
-    .intro-text {
-      font-size: 18px;
-    }
-  }
-}
-
-@media(min-width:767px) {
-  .intro {
-      height: 100%;
-      padding: 0;
-      .intro-body {
-        .brand-heading {
-          font-size: 100px;
-        }
-        .intro-text {
-          font-size: 25px;
-        }
-      }
-  }
-}
-
-.btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-  padding: 7px 16px;
-  border: 2px solid #fff;
-  border-radius: 35px;
-  font-size: 40px;
-  color: #fff;
-  background: 0 0;
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
-  &:hover,
-  &:focus {
-    outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
-  }
-  i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-  }
-  &:hover {
-    i.animated {
-      -webkit-animation-name: pulse;
-      -moz-animation-name: pulse;
-      -webkit-animation-duration: 1.5s;
-      -moz-animation-duration: 1.5s;
-      -webkit-animation-iteration-count: infinite;
-      -moz-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-      -moz-animation-timing-function: linear;
-    }
-  }
-}
-
-@-webkit-keyframes pulse {    
-  0% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-  }
-
-  50% {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-  }
-
-  100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-  }
-}
-
-@-moz-keyframes pulse {    
-  0% {
-      -moz-transform: scale(1);
-      transform: scale(1);
-  }
-
-  50% {
-      -moz-transform: scale(1.2);
-      transform: scale(1.2);
-  }
-
-  100% {
-      -moz-transform: scale(1);
-      transform: scale(1);
   }
 }

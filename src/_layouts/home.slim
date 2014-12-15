@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+  | {% slim head.slim %}
+  / The asset pipeline needs to stay here
+  / It'll cause compiling error if put in head.slim
+  | {% css_asset_tag global %}
+    - /_assets/css/app.scss
+  | {% endcss_asset_tag %}
+  | {% javascript_asset_tag global %}
+    - /_assets/js/home.js
+  | {% endjavascript_asset_tag %}
+
+  body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"
+    | {% slim navbar.slim %}
+
+    / Intro cover page
+    header.intro
+      .intro-body
+        .container
+          .row
+            .col-md-8.col-md-offset-2
+              h1.brand-heading BITS
+              p.intro-text Boston IT Services
+              a.btn.btn-circle.page-scroll href="#about"
+                i.fa.fa-angle-double-down.animated
+
+    / About
+    section.about
+      .headline We provide peace of mind.
+      .slogan We deliver IT services for small to medium-sized businesses in the Boston area. You'll never have to second guess when your network is in our hands.
+
+    / Our work
+    section.work
+      .container
+        .headline.text-center Clients & Industries
+        p Client logos here
+        .headline.text-center Our Technologies
+        p Selection of technology logos here
