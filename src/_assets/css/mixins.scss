@@ -8,3 +8,10 @@
   background-size: cover;
   -o-background-size: cover;
 }
+
+@mixin responsive-font-size($initial-size, $mobile-size) {
+  font-size: $initial-size;
+  @media (max-width: 767px) {
+    font-size: $mobile-size;
+  }
+}

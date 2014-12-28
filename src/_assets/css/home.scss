@@ -109,19 +109,28 @@ section.about {
   font-weight: 300;
   position: relative;
   .headline {
-    margin-top: 150px;
-    margin-left: 50px;
-    font-size: 4em;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    font-size: 3.5em;
+    @include responsive-font-size(3.5em, 2em);
     color: $color-blue;
   }
   .slogan {
     color: $color-dark-roon;
-    font-size: 2em;
-    margin-bottom: 30px;
-    width: 40%;
+    @include responsive-font-size(1.7em, 1.2em);
     position: absolute;
     bottom: 30px;
-    right: 20px;
+    left: 20px;
+    width: 28%;
+    @media (max-width: 767px) {
+      width: 40%;
+      top: 150px;
+      right: 50px;
+      bottom: initial;
+      left: initial;
+    }
+
   }
 }
 
